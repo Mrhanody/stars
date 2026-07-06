@@ -251,7 +251,7 @@
 
       // 4. Type the message
       setTimeout(() => {
-        typeMessage('You are my favorite star.', () => {
+        typeMessage('You are always my favorite star memo.', () => {
           // 5. After typing, start the glowing star
           setTimeout(startGlowStar, 400);
         });
