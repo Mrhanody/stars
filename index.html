@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favorite Star ✨</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Night sky canvas (hidden at start) ─── -->
+  <canvas id="sky-canvas"></canvas>
+
+  <!-- ─── Initial pink screen ─── -->
+  <div id="pink-screen">
+    <div class="card-wrapper"><div class="card">
+      <div class="star-deco top-left">✦</div>
+      <div class="star-deco top-right">✦</div>
+
+      <p class="question">Do you know who is<br>my favorite star?</p>
+
+      <button id="who-btn" aria-label="Find out who">Who?</button>
+
+      <div class="star-deco bottom-left">✦</div>
+      <div class="star-deco bottom-right">✦</div>
+    </div></div>
+  </div>
+
+  <!-- ─── Final night screen ─── -->
+  <div id="night-screen" aria-live="polite">
+    <p id="final-text" class="final-message"></p>
+    <!-- Glowing star element -->
+    <div id="glow-star">★</div>
+    <!-- Sparkle trail container -->
+    <div id="trail-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
